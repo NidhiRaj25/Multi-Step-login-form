@@ -1,0 +1,185 @@
+/* SuccessPage.css */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    width: 96px;
+    margin: 0px 40px;
+    background-color: white;
+}
+
+.bodyContainer{
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+}
+
+.header {
+    text-align: left;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.description {
+    text-align: left;
+    font-size: 17px;
+    color: grey;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.bodyContainer h3 { 
+    font-size:20px ;
+    font-weight: 900;
+}
+
+
+.UploadPicture{
+    display: flex;
+    margin-bottom: 50px;
+}
+.upload-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin: 40px;
+}
+
+.file-input {
+    display: none;
+}
+
+.choose-button {
+    width: 130px;
+    padding: 8px  10px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: white; /* Example button color */
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    border: 1.5px;
+    border-style: solid;
+    border-color:lightgray ;
+    margin-bottom: 20px;
+}
+
+
+.default-option {
+    /* Add any additional styles for the default option */
+    color: grey;
+    font-size: 14px;
+
+}
+
+.location-input {
+    display: flex;
+    justify-content: left;
+    
+    
+}
+
+.location-field {
+    margin: 20px 0;
+    padding: 10px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid lightgray;
+}
+
+.button-container {
+    display: flex;
+    justify-content: left;
+   
+}
+
+.submit-button {
+    padding: 10px;
+    background-color: rgb(242, 69, 127); 
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width:30%;
+    border-Radius:8px;
+    font-size: 15px;
+    margin: 40px 0;
+}
+
+.submit-button.disabled {
+    opacity: 0.5; /* Adjust the opacity value as needed */
+    cursor: not-allowed;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /* position: relative; */
+}
+
+
+.image-placeholder {
+    width: 180px; /* Same as uploaded-image */
+    height: 180px; /* Same as uploaded-image */
+    border-radius: 50%; /* Creates a circular shape */
+    background-color: white; /* Placeholder color */
+    border: 2px;
+    border-style:dashed;
+    border-color:lightgray ;
+    
+   
+}
+.Camera-icon{ 
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    opacity: 0.3;
+}
+
+.uploaded-image {
+    width: 180px; 
+    height: 180px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid black; 
+}
+
+
+/*Media-Quiery .................................................................................................*/
+
+
+@media (max-width:1200px){
+    .bodyContainer{ width: 70%; }
+}
+
+@media (max-width: 992px){
+    .bodyContainer{ width: 80%; }
+    .header{font-size: 34px;}
+}
+
+@media (max-width: 600px){
+    .logo{margin: 8px 30px;}
+    .bodyContainer{ width: 80%; margin-top: 0px; }
+    .UploadPicture{ flex-direction: column; margin: 15px; } 
+    .upload-section{flex-direction: column; align-items: center; margin: 25px;}
+    .file-input{justify-content: end;}
+    .header{font-size: 19px;}
+    .description{font-size: 11px; margin-bottom: 10px;}
+    .bodyContainer h3{ font-size: 17px;}
+    .submit-button{ margin: 30px 0;}
+    .choose-button{width:120px; font-size: 13px; margin-bottom: 20px;}
+    .default-option{font-size: 13px;}
+
+}
+

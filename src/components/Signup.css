@@ -1,0 +1,128 @@
+
+
+.signup-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.signup-left {
+    width: 38%;
+    background-color: #f4f4f4; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-left img {
+    width: 100%;
+    height: 100%;
+}
+
+.signup-right {
+    width: 60%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.signup-right h4{ 
+   text-align: right;
+}
+
+
+.signup-right h2 {
+    text-align: left;
+    margin-bottom: 50px;
+    margin-top:30px ;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.signup-right form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+}
+
+.signup-right .form-group-row{
+    display: flex;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.signup-right .form-group-row .form-group{
+    width: 48%;
+    display: flex;
+    
+    
+}
+
+.signup-right .form-group {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.signup-right label {
+    font-weight: bold;
+    font-size: 16px;
+    
+}
+
+.signup-right input[type="text"],
+.signup-right input[type="email"],
+.signup-right input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: #f4f4f9;
+    border-style: none ;
+    
+}
+
+.signup-right button {
+    padding: 10px;
+    background-color: rgb(242, 69, 127); 
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width:45%;
+    border-Radius:8px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    
+}
+
+.username-red {
+    background-color: rgb(236, 86, 86) !important;
+ }
+
+
+.faded-button {
+    opacity: 0.5; 
+    cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+    .signup-container{ display: flex; flex-direction: column; width: 100%;}
+    .signup-left{width: 100%;}
+    .signup-right{width: 100%; margin-left: auto; margin-right: auto;}
+    .signup-left img { width: 100%; height: 190px; object-fit: cover;object-position: 100% 0; } 
+  }
+
+  @media (max-width: 992px){
+    .signup-right form { width: 80%;}
+    .signup-right .form-group-row{display: flex; flex-direction: column;}
+    .signup-right h2{ margin-top: 20px;}
+    .signup-right .form-group{margin-bottom: 30px;}
+    .signup-right .form-group-row .form-group{ width: 100%;}
+    .signup-right .form-group-row .form-group .name{ margin-right: 0; }
+    .signup-right .form-group-row .form-group .userName{ margin-left: 0;}
+  }
